@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Интерфейс с ячейками и кнопкой</title>
+  <script src="src/script.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <table id="inputsTable" class="table">
+  <tr>
+    <td style="border-bottom: none"><label for="position">Позиция:</label></td>
+    <td style="border-bottom: none"><label for="spent">Потрачено:</label></td>
+  </tr> 
+
+  <tr>
+    <td style="border-bottom: none"> <input type="text" id="position" name="position" class="form-control"></td>
+    <td style="border-bottom: none"><input type="text" id="spent" name="spent" class="form-control"></td>
+  </tr> 
+  <tr>
+    <td colspan="2">
+      <button onclick="addInputs()" class="btn btn-primary btn-lg btn-block">+</button>
+      <button id="doneButton" class="btn btn-success btn-lg btn-block" onclick="sendData()">Готово</button>
+    </td> 
+  </tr> 
+</table>
+  </div>
+ 
+</body>
+
+</html>
